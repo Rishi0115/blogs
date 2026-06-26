@@ -5,6 +5,7 @@ from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
 
 from .models import User
+from .permissions import IsAdminUser
 from .serializers import LoginSerializer, RegisterSerializer, UserSerializer
 
 
@@ -61,3 +62,11 @@ class MeView(APIView):
 
     def get(self, request):
         return Response(UserSerializer(request.user).data)
+
+
+class UserListView(APIView):
+    permission_classes = [IsAuthenticated, IsAdminUser]
+
+    def get(self, request):
+        users = User.objects.all().order_by("id")
+        return Response(UserSerializer(users, many=True).data)
