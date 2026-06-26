@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.log
+venv/
+__pycache__/
+*.pyc
+.env
+*.log
+migrations/
