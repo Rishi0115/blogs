@@ -1,12 +1,12 @@
 # BlogsApp
 
-A full-stack blog application where users can write, edit, and delete their own posts. Admins can manage everything.
+A full stack blog application where users can write, edit, and delete their own posts. Admins can manage everything.
 
 ## Tech Stack
 
-- **Frontend** — Next.js 14, TypeScript, Tailwind CSS
-- **Backend** — Django, Django REST Framework, JWT Authentication
-- Database — PostgreSQL
+- **Frontend** : Next.js 14, TypeScript, Tailwind CSS
+- **Backend** : Django, Django REST Framework, JWT Authentication
+- Database : PostgreSQL
 
 ## Getting Started
 
